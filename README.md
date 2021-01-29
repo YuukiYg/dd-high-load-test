@@ -1,4 +1,4 @@
-# sample-app-for-datadog
+# dd-high-load-test
 
 ## Environment vriables
 * DATADOG_API_KEY: [Datadog API key]
