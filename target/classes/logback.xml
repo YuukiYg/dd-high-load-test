@@ -1,0 +1,19 @@
+<configuration>
+	<timestamp key="byDay" datePattern="yyyyMMdd'T'HHmmss" />
+	<appender name="STDOUT_JSON"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <customFields>{"env":"poc2"}</customFields>
+            <fieldNames>
+                <timestamp>time</timestamp>
+                <message>msg</message>
+                <version>version</version>
+                <stackTrace>stacktrace</stackTrace>
+            </fieldNames>
+        </encoder>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="STDOUT_JSON" />
+	</root>
+</configuration>
