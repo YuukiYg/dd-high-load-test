@@ -9,10 +9,13 @@
 `wget -O dd-java-agent.jar https://dtdg.co/latest-java-tracer`
 
 ## Build
-`mvn install -Dmaven.test.skip=true`
+`mvn install -Dmaven.test.skip=true`  
+This command needs jdk11.
 
 ## Run
-`java -javaagent:/path/to/dd-java-agent.jar -jar thisapp.jar`
+`java -javaagent:/path/to/dd-java-agent.jar -jar thisapp.jar`  
+Then, application will start on 18000 port.
+
 
 ## Test
 Send http request to your app.
