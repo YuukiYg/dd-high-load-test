@@ -1,11 +1,10 @@
 # sample-app-for-datadog
 
-## Env
+## Environment vriables
 * DATADOG_API_KEY: [Datadog API key]
 * DD_LOGS_INJECTION: true
-* DD_TRACE_SAMPLE_RATE: 1
 
-## Do it only first time
+## Do this only first time
 `wget -O dd-java-agent.jar https://dtdg.co/latest-java-tracer`
 
 ## Build
@@ -14,7 +13,8 @@ This command needs jdk11.
 
 ## Run
 `java -javaagent:/path/to/dd-java-agent.jar -jar thisapp.jar`  
-Then, application will start on 18000 port.
+Then, application will start on 18000 port.  
+Note an datadog-agent is running on your environment.
 
 
 ## Test
